@@ -27,6 +27,7 @@ function createMarkup(name, temperament, description, url) {
 selectEl.addEventListener('change', onChangeSelect);
 function onChangeSelect(evnt) {
   loaderTextEl.hidden = false;
+  errorTextEl.hidden = true;
   divForCatsEl.innerHTML = '';
   fetchCatByBreed(evnt.currentTarget.value)
     .then(r => {
