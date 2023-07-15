@@ -20,7 +20,7 @@ getSelectOption
 
 function createMarkup(name, temperament, description, url) {
   return `<div class="thumb"><img src="${url}" alt="${name}" ></div>
-<div<h2 class="title-text">${name}</h2>
+<div class="wrapperText"<h2 class="title-text">${name}</h2>
 <p class="description-text">${description}</p>
 <p class="description-text"><span class="title-text">Temperament:</span>${temperament}</p></div>`;
 }
