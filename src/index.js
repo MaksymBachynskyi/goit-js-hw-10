@@ -12,6 +12,7 @@ getSelectOption
   })
   .catch(err => {
     loaderTextEl.hidden = true;
+    errorTextEl.hidden = false;
     Notiflix.Notify.failure(
       'Oops! Something went wrong! Try reloading the page!'
     );
@@ -45,6 +46,7 @@ function onChangeSelect(evnt) {
     })
     .catch(err => {
       loaderTextEl.hidden = true;
+      errorTextEl.hidden = false;
       Notiflix.Notify.failure(
         'Oops! Something went wrong! Try reloading the page!'
       );
